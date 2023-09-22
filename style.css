@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #FFF;
+    --accent-color: #FF0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+ul {
+    width: 100%;
+    padding: 0% 6%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+    ul {
+        display: block;
+        padding: 0;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+    }
+    .buy {
+        color: var(--accent-color) !important;
+        background-color: var(--primary-color) !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    .buy:hover {
+        border: 0 !important;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .card1 {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 225px 0 0 0 !important;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+        line-height: 30px !important;
+    }
+    p {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+    .card2 {
+        margin: 20% 0 0 0 !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    img {
+        transform: none !important;
+    }
+    .img1, .img2 {
+        flex: 50% !important;
+    }
+    .img3 {
+        width: 50% !important;
+        flex: 100% !important;
+        height: auto !important;
+        margin-left: 25% !important;
+    }
+    .features {
+        font-size: 1.5rem !important;
+    }
+    h2 {
+        font-size: 1rem !important;
+    }
+    .last {
+        font-size: 0.8rem !important;
+    }
+
+}
+li:not(.link) {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: var(--accent-color);
+    transition: 0.5s;
+}
+
+.root {
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px 10px;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.root:hover {
+    transform: rotateZ(2turn);
+    transition: 0.5s;
+}
+
+.buy {
+    padding: 5px 25px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    border-radius: 0.4375rem;
+    box-shadow: 0.0625rem 0.0625rem 0.625rem 0.1875rem var(--accent-color);
+}
+
+.buy:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+.card1 {
+    width: 50%;
+    margin: 15% 8%;
+}
+
+h1 {
+    line-height: 35px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px var(--secondary-color);
+    font-size: 2rem;
+}
+
+p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+span {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: 700;
+    background-color: var(--accent-color);
+    box-shadow: 0.0625rem 0.0625rem 0.625rem 0.1875rem var(--accent-color);
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+span:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    transition: 0.5s;
+}
+
+.card2 {
+    width: 50%;
+    margin: 10% 6%;
+}
+
+img {
+    object-fit: cover;
+}
+
+.img1 {
+    transition: 0.5s;
+}
+
+.img1:active {
+    transform: scale(1.9) translateX(-100px) rotateZ(-360deg);
+    transition: 0.5s;
+}
+.img2 {
+    transition: 0.5s;
+}
+
+.img2:active {
+    transform: scale(1.9) translateX(-200px) rotateZ(-360deg);
+    transition: 0.5s;
+}
+
+.img-container {
+    display: flex;
+}
+
+.img3 {
+    margin-left: 15%;
+    transition: 0.5s;
+}
+
+.img3:active {
+    transform: scale(1.9) translateX(-150px) translateY(-90px) rotateZ(-360deg);
+    transition: 0.5s;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.features {
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+
+h2 {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.last {
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
